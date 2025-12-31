@@ -1,0 +1,10 @@
+{
+  "landing": {
+    "greeting": "こんにちは、ジョシュです"
+  },
+  "navbar": {
+    "name": "ジョシュ",
+    "about": "について",
+    "experience": "経験"
+  }
+}

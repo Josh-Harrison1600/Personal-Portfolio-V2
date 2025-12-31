@@ -1,0 +1,10 @@
+{
+  "landing": {
+    "greeting": "Hello, I'm Josh"
+  },
+  "navbar": {
+    "name": "Josh",
+    "about": "About",
+    "experience": "Experience"
+  }
+}
