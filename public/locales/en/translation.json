@@ -1,10 +1,20 @@
 {
-  "landing": {
-    "greeting": "Hello, I'm Josh"
-  },
   "navbar": {
     "name": "Josh",
     "about": "About",
-    "experience": "Experience"
-  }
+    "experience": "Experience",
+    "resume": "Resume",
+    "contact": "Contact",
+    "projects": "projects"
+  },
+  "landing": {
+    "greeting": "Hello, I'm Josh"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph": "Hello! My name is Josh and I'm a junior software engineer based in New Brunswick, Canada. I'm knowledgeable in full-stack development, specifically with React, Node and TypeScript.\n I have a passion for learning Japanese aswell with the ultimate goal of becoming a software engineer in Japan!\nIn my spare time you can usually find me at my computer studying Kanji decks or working on a new React project!"
+  },
+  "experience": {},
+  "projects": { "title": "This is the projects section" },
+  "contact": { "title": "This is the contact section" }
 }

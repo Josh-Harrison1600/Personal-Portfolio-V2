@@ -1,10 +1,17 @@
 {
-  "landing": {
-    "greeting": "こんにちは、ジョシュです"
-  },
   "navbar": {
     "name": "ジョシュ",
     "about": "について",
-    "experience": "経験"
-  }
+    "experience": "経験",
+    "resume": "履歴書",
+    "contact": "連絡",
+    "projects": "プロジェクト"
+  },
+  "landing": {
+    "greeting": "こんにちは、ジョシュです"
+  },
+  "about": {},
+  "experience": {},
+  "projects": { "title": "これはプロジェケトです" },
+  "contact": { "title": "これは連絡です" }
 }
