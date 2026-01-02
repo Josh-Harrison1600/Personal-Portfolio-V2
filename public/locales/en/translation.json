@@ -20,6 +20,10 @@
     "tokyo": "Tokyo, Japan",
     "hennge": "My first time working and traveling to Japan was when I had the pleasure to be an intern at the software company HENNGE in 2025. I was chosen among with three other interns to be the first batch of front-end interns at HENNGE!\n\n I spent my time at HENNGE learning a variety of tools. Our Task was to build out a secure admin dashboard and display data from an API that was given to us.\n\n From this I was able to learn React Query, OAuth, GitHub Actions and a plethera of other technologies listed on the left hand side! \n\n During my time at HENNGE I participated in daily standups with other software engineers and gained experience in communicating with other team members and resolving issues. "
   },
-  "projects": { "title": "This is the projects section" },
+  "projects": {
+    "title": "Projects",
+    "kana-typer-description": "Kana Typer is a web app that helps users learn the main two Japanese phonetic systems, Hiragana & Katakana.\n The user can select individual symbols, specific categories, or the entire system to study and review!",
+    "coming-soon-description": "I'm working on a new project right now which isn't quite finished yet.\n Come back soon and it will be here :)"
+  },
   "contact": { "title": "This is the contact section" }
 }
