@@ -1,0 +1,103 @@
+.experience-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.experience-title {
+  position: absolute;
+  top: -8rem;
+  left: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cloud-and-more,
+.hennge,
+.general-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  text-align: left;
+}
+
+.skills-learnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid rgb(90, 90, 90);
+  background-color: rgb(26, 26, 26);
+  padding-bottom: 2rem;
+  border-radius: 32px;
+}
+
+.skills-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.company-information {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  white-space: pre-line;
+  border: 1px solid rgb(90, 90, 90);
+  background-color: rgb(26, 26, 26);
+  border-radius: 32px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.company-title {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: x-large;
+}
+.company-title h3 {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.year-h2 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.company-p {
+  font-size: x-large;
+}
+
+/* Images */
+.skills-images img {
+  height: 70px;
+  width: 70px;
+}
+
+.country-img {
+  height: 50px;
+  width: 50px;
+}

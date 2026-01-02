@@ -11,7 +11,11 @@
     "greeting": "こんにちは、ジョシュです"
   },
   "about": {},
-  "experience": {},
+  "experience": {
+    "title": "経験",
+    "moncton": "カナダ、ニューブランズウィック州、モンクトン",
+    "tokyo": "東京、日本"
+  },
   "projects": { "title": "これはプロジェケトです" },
   "contact": { "title": "これは連絡です" }
 }

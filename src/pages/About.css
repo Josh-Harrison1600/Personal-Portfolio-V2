@@ -9,8 +9,8 @@
 
 .about-title {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: -200px;
+  left: 40px;
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -26,7 +26,7 @@
 .about-left {
   border: 1px red solid;
   width: 50%;
-  min-height: 60%;
+  min-height: 60vh;
   padding: 1.5rem;
   font-size: x-large;
   white-space: pre-line;
@@ -35,7 +35,7 @@
 .about-right {
   border: 1px red solid;
   width: 50%;
-  min-height: 60%;
+  min-height: 60vh;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
