@@ -4,6 +4,7 @@ import { type SubmitHandler, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { ToastContainer, toast } from "react-toastify";
 
 type ContactFormData = {
 	name: string;
@@ -30,8 +31,10 @@ export default function Contact() {
 				data,
 				import.meta.env.VITE_PUBLIC_KEY,
 			);
+			toast.success("Email Sent!");
 			reset();
 		} catch (error) {
+			toast.error("Something Went Wrong!");
 			console.error("FAILED...", error);
 		}
 	};
@@ -78,6 +81,11 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
+			<ToastContainer
+				position="top-right"
+				autoClose={3000}
+				style={{ zIndex: 999999 }}
+			/>
 		</div>
 	);
 }
