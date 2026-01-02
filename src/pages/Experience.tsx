@@ -10,7 +10,6 @@ import CSS from "../assets/css-3.svg";
 import GIT from "../assets/git-icon.svg";
 import GITHUBACTIONS from "../assets/github-actions.svg";
 import MONGO from "../assets/mongodb-icon.svg";
-import MYSQL from "../assets/mysql-icon.svg";
 import NODE from "../assets/nodejs-icon.svg";
 import OAUTH from "../assets/oauth.svg";
 import PINECONE from "../assets/pinecone-icon.svg";
@@ -32,59 +31,6 @@ export default function Experience() {
 			</div>
 
 			<div className="experience-content">
-				{/* Cloud&More */}
-				<div className="cloud-and-more">
-					<div className="skills-learnt">
-						<h2>Skills Learnt</h2>
-						<div className="skills-images">
-							<img src={AWS} alt="AWS" />
-							<img src={CSS} alt="AWS" />
-							<img src={GIT} alt="AWS" />
-							<img src={MYSQL} alt="AWS" />
-						</div>
-					</div>
-					<div className="company-information">
-						<h2 className="year-h2">2023</h2>
-						<div className="company-title">
-							<h3>
-								<FaRegBuilding />
-								Cloud&More
-							</h3>
-							<h3>
-								<FaLaptop />
-								Front-end Developer Intern
-							</h3>
-							<h3>
-								<FaLocationDot />
-								{t("experience.moncton")}
-								<img
-									className="country-img"
-									src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CA.svg"
-									alt="Canada"
-								/>
-							</h3>
-						</div>
-						<p className="company-p">
-							This is a paragraph This is a paragraph This is a paragraph a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph This is a
-							paragraph This is a paragraph This is a paragraph{" "}
-						</p>
-					</div>
-				</div>
-
 				{/* HENNGE */}
 				<div className="hennge">
 					<div className="skills-learnt">

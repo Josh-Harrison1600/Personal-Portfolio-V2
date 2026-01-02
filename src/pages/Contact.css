@@ -1,0 +1,68 @@
+.contact-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-methods {
+  width: 800px;
+  height: 600px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 16px;
+  background-color: black;
+}
+
+.email-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.email-form > form > input {
+  width: 70%;
+  height: 3rem;
+}
+
+.email-form > form > textarea {
+  width: 70%;
+  height: 8rem;
+  resize: none;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.linkedin,
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.linkedin-icon,
+.github-icon {
+  width: 40px;
+  height: 40px;
+}
