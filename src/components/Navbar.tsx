@@ -16,17 +16,23 @@ export default function Navbar({
 	onScrollToContact: () => void;
 	activeSection: string;
 }) {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	const getClassName = (sectionName: string) => {
 		return activeSection === sectionName ? "active-link" : "";
+	};
+
+	//Change the languge
+	const changeLanguage = () => {
+		const newLang = i18n.language === "en" ? "jp" : "en";
+		i18n.changeLanguage(newLang);
 	};
 
 	return (
 		<nav>
 			<div className="navbar-left">
 				<button
-					className="navbar-title"
+					className={`navbar-title ${getClassName("landing")}`}
 					type="button"
 					onClick={onScrollToLanding}
 				>
@@ -63,6 +69,13 @@ export default function Navbar({
 							onClick={onScrollToContact}
 						>
 							{t("navbar.contact")}
+						</button>
+						<button
+							type="button"
+							className="language-selector-btn"
+							onClick={() => changeLanguage()}
+						>
+							{t("navbar.language")}
 						</button>
 					</li>
 				</ul>
