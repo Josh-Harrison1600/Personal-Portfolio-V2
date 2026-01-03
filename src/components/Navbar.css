@@ -14,9 +14,47 @@ nav {
 
 .nav-li {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-button {
-  gap: 5rem;
+.nav-btn {
+  font-size: 2rem;
+  font-weight: bolder;
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  :focus {
+    outline: none;
+    border: none;
+    color: red;
+  }
+}
+
+/* When the user is on the corresponding part of the webpage */
+.active-link {
+  color: red;
+  font-size: 2.3rem;
+}
+
+.navbar-title {
+  font-size: 4rem;
+  font-weight: bolder;
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0 0 0 3rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  :focus {
+    outline: none;
+    border: none;
+    color: red;
+  }
 }

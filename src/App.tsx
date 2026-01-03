@@ -1,5 +1,5 @@
 import "./App.css";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import ChooseLanguage from "./components/ChooseLanguage";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
@@ -9,6 +9,7 @@ import Landing from "./pages/Landing";
 import Projects from "./pages/Projects";
 
 function App() {
+	const landingRef = useRef<HTMLElement>(null);
 	const aboutRef = useRef<HTMLElement>(null);
 	const experienceRef = useRef<HTMLElement>(null);
 	const projectsRef = useRef<HTMLElement>(null);
@@ -21,9 +22,43 @@ function App() {
 		elementRef.current?.scrollIntoView({ behavior: "smooth" });
 	};
 
+	const [activeSection, setActiveSection] = useState("");
+
+	//Handle the effect for changing navbar color when on the component
+	useEffect(() => {
+		const observerOptions = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.3,
+		};
+
+		const observerCallback = (entries: IntersectionObserverEntry[]) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					setActiveSection(entry.target.id);
+				}
+			});
+		};
+
+		const observer = new IntersectionObserver(
+			observerCallback,
+			observerOptions,
+		);
+
+		const sections = ["landing", "about", "experience", "projects", "contact"];
+		sections.forEach((id) => {
+			const el = document.getElementById(id);
+			if (el) observer.observe(el);
+		});
+
+		return () => observer.disconnect();
+	}, []);
+
 	return (
 		<>
 			<Navbar
+				activeSection={activeSection}
+				onScrollToLanding={() => handleScrollingToSection(landingRef)}
 				onScrollToAbout={() => handleScrollingToSection(aboutRef)}
 				onScrollToExperience={() => handleScrollingToSection(experienceRef)}
 				onScrollToProjects={() => handleScrollingToSection(projectsRef)}
@@ -31,23 +66,27 @@ function App() {
 			/>
 			<ChooseLanguage />
 
-			<section className="landing-section">
+			<section id="landing" ref={landingRef} className="landing-section">
 				<Landing onScrollToAbout={() => handleScrollingToSection(aboutRef)} />
 			</section>
 
-			<section ref={aboutRef} className="about-section">
+			<section id="about" ref={aboutRef} className="about-section">
 				<About />
 			</section>
 
-			<section ref={experienceRef} className="experience-section">
+			<section
+				id="experience"
+				ref={experienceRef}
+				className="experience-section"
+			>
 				<Experience />
 			</section>
 
-			<section ref={projectsRef} className="project-section">
+			<section id="projects" ref={projectsRef} className="project-section">
 				<Projects />
 			</section>
 
-			<section ref={contactRef} className="contact-section">
+			<section id="contact" ref={contactRef} className="contact-section">
 				<Contact />
 			</section>
 		</>
