@@ -23,6 +23,9 @@ function App() {
 	};
 
 	const [activeSection, setActiveSection] = useState("");
+	const [hasPickedLanguage, setHasPickedLanugage] = useState(
+		!!localStorage.getItem("language"),
+	);
 
 	//Handle the effect for changing navbar color when on the component
 	useEffect(() => {
@@ -64,31 +67,37 @@ function App() {
 				onScrollToProjects={() => handleScrollingToSection(projectsRef)}
 				onScrollToContact={() => handleScrollingToSection(contactRef)}
 			/>
-			<ChooseLanguage />
+			{!hasPickedLanguage ? (
+				<ChooseLanguage languagePicked={() => setHasPickedLanugage(true)} />
+			) : (
+				<>
+					<section id="landing" ref={landingRef} className="landing-section">
+						<Landing
+							onScrollToAbout={() => handleScrollingToSection(aboutRef)}
+						/>
+					</section>
 
-			<section id="landing" ref={landingRef} className="landing-section">
-				<Landing onScrollToAbout={() => handleScrollingToSection(aboutRef)} />
-			</section>
+					<section id="about" ref={aboutRef} className="about-section">
+						<About />
+					</section>
 
-			<section id="about" ref={aboutRef} className="about-section">
-				<About />
-			</section>
+					<section
+						id="experience"
+						ref={experienceRef}
+						className="experience-section"
+					>
+						<Experience />
+					</section>
 
-			<section
-				id="experience"
-				ref={experienceRef}
-				className="experience-section"
-			>
-				<Experience />
-			</section>
+					<section id="projects" ref={projectsRef} className="project-section">
+						<Projects />
+					</section>
 
-			<section id="projects" ref={projectsRef} className="project-section">
-				<Projects />
-			</section>
-
-			<section id="contact" ref={contactRef} className="contact-section">
-				<Contact />
-			</section>
+					<section id="contact" ref={contactRef} className="contact-section">
+						<Contact />
+					</section>
+				</>
+			)}
 		</>
 	);
 }

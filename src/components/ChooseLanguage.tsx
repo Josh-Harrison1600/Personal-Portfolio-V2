@@ -3,7 +3,11 @@ import { useDisclosure } from "@mantine/hooks";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-export default function ChooseLanguage() {
+export default function ChooseLanguage({
+	languagePicked,
+}: {
+	languagePicked: () => void;
+}) {
 	const [opened, { open, close }] = useDisclosure(false);
 	const { i18n } = useTranslation();
 
@@ -34,6 +38,7 @@ export default function ChooseLanguage() {
 				type="button"
 				onClick={() => {
 					changeLanguage("en");
+					languagePicked();
 					localStorage.setItem("language", "en");
 					close();
 				}}
@@ -44,6 +49,7 @@ export default function ChooseLanguage() {
 				type="button"
 				onClick={() => {
 					changeLanguage("jp");
+					languagePicked();
 					localStorage.setItem("language", "jp");
 					close();
 				}}
