@@ -1,0 +1,38 @@
+.greeting {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+  height: 400px;
+}
+
+.role-array {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.role-state {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.role-typewriter {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.greeting-typewriter {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

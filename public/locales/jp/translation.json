@@ -9,7 +9,17 @@
     "language": "Language"
   },
   "landing": {
-    "greeting": "こんにちは、ジョシュです"
+    "greeting-one": "こんにちは、名前は",
+    "greeting-two": " ジョシュ",
+    "greeting-three": "です",
+    "role-state": "私は",
+    "role-array": [
+      "フルスタック開発者です",
+      "日本の愛好家です",
+      "React開発者です",
+      "カナダで住んでいます",
+      "ボタンをクリックしてください"
+    ]
   },
   "about": {},
   "experience": {
