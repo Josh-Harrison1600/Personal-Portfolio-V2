@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useRef, useState } from "react";
 import ChooseLanguage from "./components/ChooseLanguage";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
@@ -59,7 +59,7 @@ function App() {
 
 	return (
 		<>
-			<Navbar
+			<Header
 				activeSection={activeSection}
 				onScrollToLanding={() => handleScrollingToSection(landingRef)}
 				onScrollToAbout={() => handleScrollingToSection(aboutRef)}

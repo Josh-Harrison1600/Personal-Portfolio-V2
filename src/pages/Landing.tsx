@@ -1,6 +1,6 @@
 import "./Landing.css";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Typewriter from "typewriter-effect";
 
@@ -10,8 +10,20 @@ export default function Landing({
 	onScrollToAbout: () => void;
 }) {
 	const [introFinished, setIsIntroFinished] = useState(false);
+	const [unlockScroll, setUnlockScroll] = useState(false);
 	const { t } = useTranslation();
 	const roles = t("landing.role-array", { returnObjects: true });
+
+	//Lock scrolling until the intro is done
+	useEffect(() => {
+		if (!unlockScroll) {
+			document.documentElement.classList.add("scroll-lock");
+			document.body.classList.add("scroll-lock");
+		} else {
+			document.documentElement.classList.remove("scroll-lock");
+			document.body.classList.remove("scroll-lock");
+		}
+	}, [unlockScroll]);
 
 	return (
 		<div className="greeting">
@@ -41,7 +53,9 @@ export default function Landing({
 								loop: true,
 							}}
 							onInit={(typewriter) => {
-								typewriter;
+								typewriter.callFunction(() => {
+									setUnlockScroll(true);
+								});
 								if (Array.isArray(roles)) {
 									roles.forEach((role) => {
 										typewriter.typeString(role).pauseFor(150).deleteAll();
