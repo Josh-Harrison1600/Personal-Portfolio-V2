@@ -1,4 +1,5 @@
 import "./Landing.css";
+import { motion } from "motion/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Typewriter from "typewriter-effect";
@@ -54,9 +55,24 @@ export default function Landing({
 				</div>
 			</div>
 			<div className="get-started">
-				<button type="button" onClick={onScrollToAbout}>
-					Get Started
-				</button>
+				<motion.div
+					initial={{ opacity: 0, scale: 0 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{
+						duration: 0.4,
+						delay: 9.2,
+						scale: {
+							type: "spring",
+							visualDuration: 0.3,
+							bounce: 0.6,
+							delay: 9.2,
+						},
+					}}
+				>
+					<button type="button" onClick={onScrollToAbout}>
+						Get Started
+					</button>
+				</motion.div>
 			</div>
 		</div>
 	);

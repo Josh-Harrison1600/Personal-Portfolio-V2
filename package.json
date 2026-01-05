@@ -16,6 +16,7 @@
     "emailjs": "^5.0.0",
     "i18next": "^25.7.3",
     "i18next-http-backend": "^3.0.2",
+    "motion": "^12.24.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.69.0",
