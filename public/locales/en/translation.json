@@ -28,7 +28,8 @@
     "title": "Experience",
     "moncton": "Moncton, New Brunswick, Canada",
     "tokyo": "Tokyo, Japan",
-    "hennge": "My first time working and traveling to Japan was when I had the pleasure to be an intern at the software company HENNGE in 2025. I was chosen among with two other interns to be the first batch of front-end interns at HENNGE!\n\n I spent my time at HENNGE learning a variety of tools. Our Task was to build out a secure admin dashboard and display data from an API that was given to us.\n\n From this I was able to learn React Query, OAuth, GitHub Actions and a plethera of other technologies listed on the left hand side! \n\n During my time at HENNGE I participated in daily standups with other software engineers and gained experience in communicating with other team members and resolving issues. "
+    "general-data": "Created an internal full-stack application with React, TypeScript Node.js, CSS, Tailwind, and Retrieval Augmented Generation. Deployed and managed a full-stack application using CI/CD, GitHub Actions, and Microsoft Azure services. Developed a bankruptcy processing form in React, using TypeScript and Tailwind CSS, tailored to client-specific needs. Integrated form state management and validation for a seamless and error-resistant user experience. Coordinated backend enhancements using Node.js for custom API logic and data handling.",
+    "hennge": "Created an admin dashboard Using React, TypeScript, and CSS along with a variety of libraries such as React Query. Deployed the application using CI/CD, and GitHub Actions. Set up an AWS environment with Terraform, S3, CloudFront, and Route53 to support the deployment of the application. Participated in daily standups with engineering team to discuss and solve issues."
   },
   "projects": {
     "title": "Projects",
