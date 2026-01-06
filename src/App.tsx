@@ -15,6 +15,7 @@ function App() {
 	const experienceRef = useRef<HTMLElement>(null);
 	const projectsRef = useRef<HTMLElement>(null);
 	const contactRef = useRef<HTMLElement>(null);
+	const gradientRef = useRef<HTMLDivElement>(null);
 
 	//handle the scrolling to sections
 	const handleScrollingToSection = (
@@ -58,6 +59,22 @@ function App() {
 		return () => observer.disconnect();
 	}, []);
 
+	//get the mouse for the gradient effect
+	useEffect(() => {
+		const updateMousePos = (event: MouseEvent) => {
+			if (!gradientRef) return;
+			if (gradientRef.current === null) return;
+			const { clientX, clientY } = event;
+			gradientRef.current.style.setProperty("--x", `${clientX}px`);
+			gradientRef.current.style.setProperty("--y", `${clientY}px`);
+		};
+		window.addEventListener("mousemove", updateMousePos);
+
+		return () => {
+			window.removeEventListener("mousemove", updateMousePos);
+		};
+	}, []);
+
 	return (
 		<>
 			<Header
@@ -71,7 +88,7 @@ function App() {
 			{!hasPickedLanguage ? (
 				<ChooseLanguage languagePicked={() => setHasPickedLanugage(true)} />
 			) : (
-				<>
+				<div className="gradient-div" ref={gradientRef}>
 					<section id="landing" ref={landingRef} className="landing-section">
 						<Landing
 							onScrollToAbout={() => handleScrollingToSection(aboutRef)}
@@ -99,7 +116,7 @@ function App() {
 					</section>
 
 					<Footer />
-				</>
+				</div>
 			)}
 		</>
 	);
