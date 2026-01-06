@@ -46,6 +46,16 @@
   padding-right: 2rem;
 }
 
+.company-redirect {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
 .cloud-and-more,
 .hennge,
 .general-data {
