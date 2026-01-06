@@ -1,0 +1,28 @@
+.site-footer {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(24, 24, 24);
+  border-top: 1px solid rgb(92, 92, 92);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.linkedin,
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.linkedin-icon,
+.github-icon {
+  width: 40px;
+  height: 40px;
+}

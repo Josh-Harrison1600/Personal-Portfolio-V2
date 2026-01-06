@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useRef, useState } from "react";
 import ChooseLanguage from "./components/ChooseLanguage";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -96,6 +97,8 @@ function App() {
 					<section id="contact" ref={contactRef} className="contact-section">
 						<Contact />
 					</section>
+
+					<Footer />
 				</>
 			)}
 		</>

@@ -2,7 +2,6 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -59,26 +58,7 @@ export default function Contact() {
 							Send Message
 						</button>
 					</form>
-					<div className="socials">
-						<div className="linkedin">
-							<a
-								href="https://www.linkedin.com/in/josh-harrison2283/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<FaLinkedin className="linkedin-icon" />
-							</a>
-						</div>
-						<div className="github">
-							<a
-								href="https://github.com/Josh-Harrison1600"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<FaGithub className="github-icon" />
-							</a>
-						</div>
-					</div>
+					<div className="socials"></div>
 				</div>
 			</div>
 			<ToastContainer
