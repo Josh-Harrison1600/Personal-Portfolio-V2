@@ -96,7 +96,6 @@ nav {
   margin: 0;
   padding: 0 0 0 3rem;
   color: rgba(255, 255, 255, 0.877);
-  transition: ;
 
   &:hover {
     transition: all 0.2s ease-in-out;
