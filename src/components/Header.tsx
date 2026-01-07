@@ -49,7 +49,7 @@ export default function Navbar({
 			<nav>
 				<div className="navbar-left">
 					<button
-						className={`navbar-title ${getClassName("landing")}`}
+						className="navbar-title"
 						type="button"
 						onClick={onScrollToLanding}
 					>
