@@ -22,9 +22,10 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
-  border: 1px solid rgb(83, 83, 83);
-  border-radius: 16px;
-  background-color: black;
+  border: 1px #1b3c8a solid;
+  border-radius: 32px;
+  background-color: #0f172a;
+  box-shadow: 2px 2px 10px 2px #3f61b1;
 }
 
 .email-form > form {
@@ -38,12 +39,14 @@
 .email-form > form > input {
   width: 70%;
   height: 3rem;
+  background-color: #0f172a;
 }
 
 .email-form > form > textarea {
   width: 70%;
   height: 8rem;
   resize: none;
+  background-color: #0f172a;
 }
 
 .socials {
