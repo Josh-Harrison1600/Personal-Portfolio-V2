@@ -33,7 +33,7 @@ export default function Landing({
 					onInit={(typewriter) => {
 						typewriter
 							.typeString(
-								`${t("landing.greeting-one")}<span style='color: red;'>${t("landing.greeting-two")}</span>${t("landing.greeting-three")}`,
+								`${t("landing.greeting-one")}<span style='color: #00ffff;'>${t("landing.greeting-two")}</span>${t("landing.greeting-three")}`,
 							)
 							.pauseFor(2500)
 							.start()

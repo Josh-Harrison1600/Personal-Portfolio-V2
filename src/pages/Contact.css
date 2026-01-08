@@ -40,6 +40,15 @@
   width: 70%;
   height: 3rem;
   background-color: #0f172a;
+  border: 2px solid rgba(255, 255, 255, 0.699);
+  padding-left: 0.8rem;
+  transition: all 0.2s ease-in-out;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #00ffff;
+    background-color: #0a101d;
+  }
 }
 
 .email-form > form > textarea {
@@ -47,6 +56,16 @@
   height: 8rem;
   resize: none;
   background-color: #0f172a;
+  border: 2px solid rgba(255, 255, 255, 0.699);
+  padding-left: 0.8rem;
+  padding-top: 0.5rem;
+  transition: all 0.2s ease-in-out;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #00ffff;
+    background-color: #0a101d;
+  }
 }
 
 .socials {
