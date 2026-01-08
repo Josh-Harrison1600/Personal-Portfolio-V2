@@ -53,8 +53,8 @@ export default function Contact() {
 							placeholder="Enter Your Message"
 							{...register("message")}
 						/>
-						<button type="submit">
-							<MdOutlineEmail />
+						<button type="submit" className="submit-message-btn">
+							<MdOutlineEmail className="email-icon" />
 							Send Message
 						</button>
 					</form>
@@ -65,6 +65,7 @@ export default function Contact() {
 				position="top-right"
 				autoClose={3000}
 				style={{ zIndex: 999999 }}
+				toastClassName="custom-toast"
 			/>
 		</div>
 	);

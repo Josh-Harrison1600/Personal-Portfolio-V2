@@ -83,8 +83,12 @@ export default function Landing({
 						},
 					}}
 				>
-					<button type="button" onClick={onScrollToAbout}>
-						Get Started
+					<button
+						type="button"
+						onClick={onScrollToAbout}
+						className="get-started-btn"
+					>
+						Get Started ↓
 					</button>
 				</motion.div>
 			</div>

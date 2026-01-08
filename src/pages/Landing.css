@@ -41,3 +41,18 @@
   /* biome-ignore lint/complexity/noImportantStyles: <force the no scroll for the intro> */
   overflow: hidden !important;
 }
+
+.get-started-btn {
+  margin-top: 1rem;
+  background: none;
+  border: 1px solid #00ffff;
+  border-radius: 0;
+  color: #00ffff;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid #4fd1d3;
+    background: #4fd1d3;
+    color: white;
+  }
+}

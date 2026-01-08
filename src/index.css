@@ -13,6 +13,19 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Force fix for the weird styling issue */
+  --toastify-toast-background: #4fd1d3;
+  --toastify-icon-color-info: #fff;
+  --toastify-icon-color-success: #fff;
+  --toastify-icon-color-warning: #fff;
+  --toastify-icon-color-error: #fff;
+  --toastify-text-color-light: #fff;
+  --toastify-color-progress-light: #fff;
+  --toastify-color-progress-info: #fff;
+  --toastify-color-progress-success: #fff;
+  --toastify-color-progress-warning: #fff;
+  --toastify-color-progress-error: #fff;
 }
 
 a {
@@ -48,9 +61,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
