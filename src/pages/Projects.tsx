@@ -37,12 +37,18 @@ export default function Projects() {
 						</div>
 					</div>
 					<div className="project-video-div">
-						<video className="project-video" muted autoPlay={false} loop>
-							<source
-								src="https://mayakashi.s3.us-east-2.amazonaws.com/KanaTyper.mp4"
-								type="video/mp4"
-							/>
-						</video>
+						<a
+							href="https://github.com/Josh-Harrison1600/Kana-Typer"
+							target="__blank"
+							rel="noopener noreferrer"
+						>
+							<video className="project-video" muted autoPlay={false} loop>
+								<source
+									src="https://mayakashi.s3.us-east-2.amazonaws.com/KanaTyper.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</a>
 					</div>
 				</div>
 				<div className="project-2">
