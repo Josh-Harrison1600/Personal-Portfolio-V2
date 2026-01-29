@@ -24,7 +24,7 @@
   flex-direction: column;
   border: 1px #1b3c8a solid;
   border-radius: 32px;
-  background-color: #0f172a;
+  background-color: var(--main-background-color);
   box-shadow: 2px 2px 10px 2px #3f61b1;
 }
 
@@ -39,7 +39,7 @@
 .email-form > form > input {
   width: 70%;
   height: 3rem;
-  background-color: #0f172a;
+  background-color: var(--main-background-color);
   border: 2px solid rgba(255, 255, 255, 0.699);
   padding-left: 0.8rem;
   transition: all 0.2s ease-in-out;
@@ -55,7 +55,7 @@
   width: 70%;
   height: 8rem;
   resize: none;
-  background-color: #0f172a;
+  background-color: var(--main-background-color);
   border: 2px solid rgba(255, 255, 255, 0.699);
   padding-left: 0.8rem;
   padding-top: 0.5rem;

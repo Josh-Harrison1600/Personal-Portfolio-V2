@@ -1,5 +1,6 @@
 import "./About.css";
 import { useTranslation } from "react-i18next";
+import RESUME from "../../public/resume/Josh Harrison Resume.pdf";
 import AWS from "../assets/aws.svg";
 import CSS from "../assets/css-3.svg";
 import GIT from "../assets/git-icon.svg";
@@ -10,7 +11,6 @@ import REACT from "../assets/react.svg";
 import TAILWIND from "../assets/tailwindcss-icon.svg";
 import TERRAFORM from "../assets/terraform-icon.svg";
 import TYPESCRIPT from "../assets/typescript-icon.svg";
-
 export default function About() {
 	const { t } = useTranslation();
 
@@ -19,6 +19,9 @@ export default function About() {
 			<div className="about-content">
 				<div className="about-left">
 					<p>{t("about.paragraph")}</p>
+					<a href={RESUME} download className="download-resume">
+						<span className="download-text">{t("about.download")}</span>
+					</a>
 				</div>
 				<div className="about-right">
 					<img src={TYPESCRIPT} alt="TypeScript" />

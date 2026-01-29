@@ -1,7 +1,15 @@
 :root {
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo",
-    "Yu Gothic", "YuGothic", system-ui, /* Move this further down */ Avenir,
-    Helvetica, Arial, sans-serif;
+  font-family:
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Meiryo",
+    "Yu Gothic",
+    "YuGothic",
+    system-ui,
+    /* Move this further down */ Avenir,
+    Helvetica,
+    Arial,
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
