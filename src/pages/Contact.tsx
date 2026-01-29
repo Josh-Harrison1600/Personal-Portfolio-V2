@@ -66,6 +66,7 @@ export default function Contact() {
 				autoClose={3000}
 				style={{ zIndex: 999999 }}
 				toastClassName="custom-toast"
+				
 			/>
 		</div>
 	);

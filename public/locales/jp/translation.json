@@ -23,10 +23,9 @@
   },
   "about": {},
   "experience": {
-    "title": "経験",
     "moncton": "カナダ、ニューブランズウィック州、モンクトン",
     "tokyo": "東京、日本"
   },
-  "projects": { "title": "プロジェケト" },
-  "contact": { "title": "これは連絡です" }
+  "projects": {},
+  "contact": { "title": "これは連絡です!" }
 }

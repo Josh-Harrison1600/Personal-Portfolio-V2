@@ -16,10 +16,6 @@ export default function About() {
 
 	return (
 		<div className="about-div">
-			<div className="about-title">
-				<h2>{t("about.title")}</h2>
-			</div>
-
 			<div className="about-content">
 				<div className="about-left">
 					<p>{t("about.paragraph")}</p>

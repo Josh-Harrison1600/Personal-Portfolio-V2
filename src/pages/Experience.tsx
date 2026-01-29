@@ -20,10 +20,6 @@ export default function Experience() {
 
 	return (
 		<div className="experience-div">
-			<div className="experience-title">
-				<h2>{t("experience.title")}</h2>
-			</div>
-
 			<div className="experience-content">
 				{/* General Data */}
 
