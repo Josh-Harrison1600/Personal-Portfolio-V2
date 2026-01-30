@@ -65,7 +65,7 @@ export default function Navbar({
 
 				{/* Mobile button */}
 				<button type="button" className="hamburger-button" onClick={toggleMenu}>
-					<RxHamburgerMenu />
+					<RxHamburgerMenu size={28} />
 				</button>
 
 				<div

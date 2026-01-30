@@ -1,11 +1,17 @@
 import "./Projects.css";
 import { useTranslation } from "react-i18next";
-import CSS from "../assets/css-3.svg";
-import GITHUBACTIONS from "../assets/github-actions.svg";
-import PYTHON from "../assets/Python.svg";
-import REACT from "../assets/react.svg";
-import TAILWIND from "../assets/tailwindcss-icon.svg";
-import TYPESCRIPT from "../assets/typescript-icon.svg";
+
+interface ProjectCardProps {
+	title: string;
+}
+
+function ProjectCard({ title }: ProjectCardProps) {
+	return (
+		<div className="project-card">
+			<p className="project-tool-name">{title}</p>
+		</div>
+	);
+}
 
 export default function Projects() {
 	const { t } = useTranslation();
@@ -22,13 +28,10 @@ export default function Projects() {
 						{t("projects.kana-typer-description")}
 					</p>
 					<div className="stack-used">
-						<h2>Stack Used</h2>
-						<div className="stack-used-images">
-							<img src={REACT} alt="React" />
-							<img src={CSS} alt="CSS" />
-							<img src={TAILWIND} alt="Tailwind" />
-							<img src={TYPESCRIPT} alt="React" />
-						</div>
+						<ProjectCard title="React" />
+						<ProjectCard title="CSS" />
+						<ProjectCard title="Tailwind" />
+						<ProjectCard title="TypeScript" />
 					</div>
 				</div>
 				<div className="project-video-div">
@@ -69,14 +72,11 @@ export default function Projects() {
 						{t("projects.japan-job-scraper")}
 					</p>
 					<div className="stack-used">
-						<h2>Stack Used</h2>
-						<div className="stack-used-images">
-							<img src={PYTHON} alt="Python" />
-							<img src={REACT} alt="React" />
-							<img src={CSS} alt="CSS" />
-							<img src={TYPESCRIPT} alt="TypeScript" />
-							<img src={GITHUBACTIONS} alt="GitHub Actions" />
-						</div>
+						<ProjectCard title="Python" />
+						<ProjectCard title="React" />
+						<ProjectCard title="CSS" />
+						<ProjectCard title="TypeScript" />
+						<ProjectCard title="GitHub Actions" />
 					</div>
 				</div>
 			</div>

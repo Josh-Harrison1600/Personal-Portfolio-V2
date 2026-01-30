@@ -69,7 +69,7 @@
     border: var(--blue-border);
     box-shadow: var(--blue-shadow);
     .download-text {
-      transform: translateY(-4px);
+      transform: translateY(-4px) translateX(-3px);
       text-decoration: none;
     }
     &:any-link {
@@ -129,6 +129,18 @@
 
   .download-resume {
     margin: 0;
+
+    &:hover {
+      border: var(--blue-border);
+      box-shadow: none;
+      .download-text {
+        transform: translateY(0) translateX(0);
+        text-decoration: none;
+      }
+      &:any-link {
+        color: #3f61b1;
+      }
+    }
   }
 
   .about-left {

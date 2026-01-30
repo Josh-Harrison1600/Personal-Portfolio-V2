@@ -145,7 +145,10 @@ nav {
   }
 
   .hamburger-button {
-    display: block;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar-title {
