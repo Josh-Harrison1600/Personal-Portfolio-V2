@@ -139,6 +139,11 @@ nav {
     }
   }
 
+  nav {
+    height: 10vh;
+    padding-left: 0rem;
+  }
+
   .hamburger-button {
     display: block;
   }

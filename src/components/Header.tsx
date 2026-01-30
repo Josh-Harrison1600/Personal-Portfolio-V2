@@ -81,28 +81,40 @@ export default function Navbar({
 							<button
 								type="button"
 								className={`nav-btn ${getClassName("about")}`}
-								onClick={onScrollToAbout}
+								onClick={() => {
+									onScrollToAbout();
+									toggleMenu();
+								}}
 							>
 								{t("navbar.about")}
 							</button>
 							<button
 								type="button"
 								className={`nav-btn ${getClassName("experience")}`}
-								onClick={onScrollToExperience}
+								onClick={() => {
+									onScrollToExperience();
+									toggleMenu();
+								}}
 							>
 								{t("navbar.experience")}
 							</button>
 							<button
 								type="button"
 								className={`nav-btn ${getClassName("projects")}`}
-								onClick={onScrollToProjects}
+								onClick={() => {
+									onScrollToProjects();
+									toggleMenu();
+								}}
 							>
 								{t("navbar.projects")}
 							</button>
 							<button
 								type="button"
 								className={`nav-btn ${getClassName("contact")}`}
-								onClick={onScrollToContact}
+								onClick={() => {
+									onScrollToContact();
+									toggleMenu();
+								}}
 							>
 								{t("navbar.contact")}
 							</button>
