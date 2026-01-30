@@ -68,7 +68,9 @@ export default function Navbar({
 					<RxHamburgerMenu />
 				</button>
 
-				<div className={`navbar-right ${isMenuOpen ? "mobile-open" : ""}`}>
+				<div
+					className={`navbar-right ${isMenuOpen ? "mobile-open" : "mobile-closed"}`}
+				>
 					<div className="close-icon-div">
 						<button type="button" className="close-icon" onClick={toggleMenu}>
 							<IoCloseSharp size={52} />
