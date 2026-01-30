@@ -3,7 +3,7 @@
   text-align: center;
   width: 100%;
   background-color: var(--main-background-color);
-  border-top: 1px solid rgb(92, 92, 92);
+  border-top: 1px solid var(--main-border);
 }
 
 .footer-icons {
@@ -28,6 +28,6 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.877);
+    color: var(--white-text);
   }
 }

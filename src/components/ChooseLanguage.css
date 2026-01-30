@@ -19,8 +19,8 @@
 .modal-content-class {
   text-align: center;
   background-color: var(--main-background-color);
-  border: 1px #1b3c8a solid;
-  box-shadow: 2px 2px 10px 2px #3f61b1;
+  border: var(--blue-border);
+  box-shadow: var(--blue-shadow);
   height: 200px;
   position: relative;
   display: flex;
@@ -71,6 +71,7 @@
 
 .japanese-btn {
   background-position-y: -10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .japanese-btn:hover {

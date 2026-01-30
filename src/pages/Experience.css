@@ -74,9 +74,9 @@
   flex-direction: column;
   flex: 3;
   white-space: pre-line;
-  border: 1px solid #1b3c8a;
+  border: var(--blue-border);
   background-color: var(--main-background-color);
-  box-shadow: 2px 2px 10px 2px #3f61b1;
+  box-shadow: var(--blue-shadow);
   border-radius: 32px;
   padding-left: 2rem;
   padding-right: 2rem;
