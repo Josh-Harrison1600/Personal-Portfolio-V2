@@ -80,6 +80,12 @@
   border-radius: 32px;
   padding-left: 2rem;
   padding-right: 2rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: var(--blue-shadow-hover);
+    border: var(--blue-border-hover);
+  }
 }
 
 .company-title {

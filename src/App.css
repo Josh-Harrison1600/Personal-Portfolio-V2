@@ -12,8 +12,13 @@ body,
   --teal-color: #00ffff;
   --main-border: rgb(92, 92, 92);
   --white-text: rgba(255, 255, 255, 0.877);
+
   --blue-shadow: 2px 2px 10px 2px #3f61b1;
+  --blue-shadow-hover: 3px 3px 11px 3px #476cc4;
+
   --blue-border: 1px solid #1b3c8a;
+  --blue-border-hover: 1px solid #2248a0;
+
   --email-border: 2px solid rgba(255, 255, 255, 0.699);
   --email-background: #0a101d;
 }

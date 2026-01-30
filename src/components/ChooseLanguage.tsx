@@ -30,7 +30,7 @@ export default function ChooseLanguage({
 		<Modal
 			opened={opened}
 			onClose={close}
-			title="Select Your Language"
+			title={<span data-autofocus>Select Your Language</span>}
 			zIndex={10000}
 			withinPortal={false}
 			withCloseButton={false}
