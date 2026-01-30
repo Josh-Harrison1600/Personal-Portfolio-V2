@@ -107,3 +107,53 @@ nav {
     color: rgb(0, 238, 255);
   }
 }
+
+.hamburger-button {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block;
+  }
+
+  .navbar-title {
+    font-size: 2rem;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-right.mobile-open {
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nav-li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-icon-div {
+    position: absolute;
+    top: 0.5rem;
+    right: 0rem;
+  }
+
+  .close-icon {
+    display: flex;
+    background: none;
+  }
+}

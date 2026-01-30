@@ -23,6 +23,7 @@ body,
   --email-background: #0a101d;
 }
 
+/* Cursor gradient effect */
 .gradient-div {
   background-attachment: fixed;
   background-image: radial-gradient(
@@ -31,6 +32,14 @@ body,
     transparent 100%
   );
   background-color: var(--main-background-color);
+}
+
+/* Get rid of cursor gradient on mobile */
+@media (max-width: 768px) {
+  .gradient-div {
+    background-image: none;
+    background-color: var(--main-background-color);
+  }
 }
 
 .logo {

@@ -1,6 +1,9 @@
 import "./Header.css";
 import { motion } from "motion/react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { IoCloseSharp } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar({
 	onScrollToLanding,
@@ -18,6 +21,9 @@ export default function Navbar({
 	activeSection: string;
 }) {
 	const { t, i18n } = useTranslation();
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
 	const getClassName = (sectionName: string) => {
 		return activeSection === sectionName ? "active-link" : "";
@@ -56,7 +62,18 @@ export default function Navbar({
 						{t("navbar.name")}
 					</button>
 				</div>
-				<div className="navbar-right">
+
+				{/* Mobile button */}
+				<button type="button" className="hamburger-button" onClick={toggleMenu}>
+					<RxHamburgerMenu />
+				</button>
+
+				<div className={`navbar-right ${isMenuOpen ? "mobile-open" : ""}`}>
+					<div className="close-icon-div">
+						<button type="button" className="close-icon" onClick={toggleMenu}>
+							<IoCloseSharp size={52} />
+						</button>
+					</div>
 					<ul className="nav-ul">
 						<li className="nav-li">
 							<button
