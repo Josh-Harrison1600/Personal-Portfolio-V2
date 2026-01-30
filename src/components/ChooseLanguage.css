@@ -65,5 +65,24 @@
 
   &:hover {
     transform: scale(1.1);
+    font-size: 0px;
   }
+}
+
+.japanese-btn {
+  background-position-y: -10px;
+}
+
+.japanese-btn:hover {
+  background-image: url("/src/assets/japan.png");
+  background-size: cover;
+}
+
+.english-btn {
+  background-position-y: 0px;
+}
+
+.english-btn:hover {
+  background-image: url("/src/assets/britian.png");
+  background-size: cover;
 }

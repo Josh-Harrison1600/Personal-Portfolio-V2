@@ -30,7 +30,7 @@ export default function ChooseLanguage({
 		<Modal
 			opened={opened}
 			onClose={close}
-			title="Choose Language"
+			title="Select Your Language"
 			zIndex={10000}
 			withinPortal={false}
 			withCloseButton={false}
