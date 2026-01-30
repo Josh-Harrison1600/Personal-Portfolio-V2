@@ -1,15 +1,11 @@
 import "./Projects.css";
 import { useTranslation } from "react-i18next";
-import AWS from "../assets/aws.svg";
 import UnderConstruction from "../assets/buillding.png";
 import CSS from "../assets/css-3.svg";
 import GITHUBACTIONS from "../assets/github-actions.svg";
-import NODE from "../assets/nodejs-icon.svg";
-import POSTGRES from "../assets/postgresql.svg";
+import PYTHON from "../assets/Python.svg";
 import REACT from "../assets/react.svg";
-import RQUERY from "../assets/react-query-icon.svg";
 import TAILWIND from "../assets/tailwindcss-icon.svg";
-import TERRAFORM from "../assets/terraform-icon.svg";
 import TYPESCRIPT from "../assets/typescript-icon.svg";
 
 export default function Projects() {
@@ -19,8 +15,10 @@ export default function Projects() {
 		<div className="projects-content">
 			<div className="project-1">
 				<div className="kana-typer-desc">
-					<h2>Kana Typer</h2>
-					<p>{t("projects.kana-typer-description")}</p>
+					<h2 className="project-title">{t("projects.kana-typer-title")}</h2>
+					<p className="project-description">
+						{t("projects.kana-typer-description")}
+					</p>
 					<div className="stack-used">
 						<h2>Stack Used</h2>
 						<div className="stack-used-images">
@@ -51,20 +49,20 @@ export default function Projects() {
 					<img src={UnderConstruction} alt="Under Construction" />
 				</div>
 				<div className="kana-typer-desc">
-					<h2>Coming Soon...</h2>
-					<p>{t("projects.coming-soon-description")}</p>
+					<h2 className="project-title">
+						{t("projects.japan-job-scraper-title")}
+					</h2>
+					<p className="project-description">
+						{t("projects.japan-job-scraper")}
+					</p>
 					<div className="stack-used">
-						<h2>Stack Being Used</h2>
+						<h2>Stack Used</h2>
 						<div className="stack-used-images">
+							<img src={PYTHON} alt="Python" />
 							<img src={REACT} alt="React" />
 							<img src={CSS} alt="CSS" />
 							<img src={TYPESCRIPT} alt="TypeScript" />
 							<img src={GITHUBACTIONS} alt="GitHub Actions" />
-							<img src={POSTGRES} alt="PostgreSQL" />
-							<img src={NODE} alt="Nodejs" />
-							<img src={RQUERY} alt="React Query" />
-							<img src={TERRAFORM} alt="Terraform" />
-							<img src={AWS} alt="AWS" />
 						</div>
 					</div>
 				</div>

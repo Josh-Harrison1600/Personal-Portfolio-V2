@@ -30,6 +30,14 @@
   }
 }
 
+.project-title {
+  font-size: 38px;
+}
+
+.project-description {
+  font-size: 20px;
+}
+
 .stack-used-images {
   display: flex;
   align-items: center;
