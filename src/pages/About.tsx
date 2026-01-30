@@ -18,7 +18,7 @@ export default function About() {
 		<div className="about-div">
 			<div className="about-content">
 				<div className="about-left">
-					<p>{t("about.paragraph")}</p>
+					<p className="about-paragraph">{t("about.paragraph")}</p>
 					<a href={RESUME} download className="download-resume">
 						<span className="download-text">{t("about.download")}</span>
 					</a>
