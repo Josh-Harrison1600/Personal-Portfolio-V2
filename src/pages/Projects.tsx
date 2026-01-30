@@ -46,10 +46,21 @@ export default function Projects() {
 			</div>
 			<div className="project-2">
 				<div className="project-video-div">
-					<img src={UnderConstruction} alt="Under Construction" />
+					<a
+						href="https://github.com/Josh-Harrison1600/Kana-Typer"
+						target="__blank"
+						rel="noopener noreferrer"
+					>
+						<video className="project-video" muted autoPlay={false} loop>
+							<source
+								src="https://mayakashi.s3.us-east-2.amazonaws.com/KanaTyper.mp4"
+								type="video/mp4"
+							/>
+						</video>
+					</a>
 				</div>
 				<div className="kana-typer-desc">
-					<h2 className="project-title">
+					<h2 className="project-title-bottom">
 						{t("projects.japan-job-scraper-title")}
 					</h2>
 					<p className="project-description">
