@@ -46,7 +46,7 @@
 
   &:focus {
     outline: none;
-    border: 2px solid #00ffff;
+    border: 2px solid var(--teal-color);
     background-color: #0a101d;
   }
 }
@@ -63,7 +63,7 @@
 
   &:focus {
     outline: none;
-    border: 2px solid #00ffff;
+    border: 2px solid var(--teal-color);
     background-color: #0a101d;
   }
 }

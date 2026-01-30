@@ -6,7 +6,10 @@ body,
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
+
+  /* Variables */
   --main-background-color: #0f172a;
+  --teal-color: #00ffff;
 }
 
 .gradient-div {

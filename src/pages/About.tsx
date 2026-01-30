@@ -1,6 +1,5 @@
 import "./About.css";
 import { useTranslation } from "react-i18next";
-import RESUME from "../../public/resume/Josh Harrison Resume.pdf";
 import AWS from "../assets/aws.svg";
 import CSS from "../assets/css-3.svg";
 import GIT from "../assets/git-icon.svg";
@@ -11,6 +10,7 @@ import REACT from "../assets/react.svg";
 import TAILWIND from "../assets/tailwindcss-icon.svg";
 import TERRAFORM from "../assets/terraform-icon.svg";
 import TYPESCRIPT from "../assets/typescript-icon.svg";
+import RESUME from "../resume/Josh Harrison Resume.pdf";
 export default function About() {
 	const { t } = useTranslation();
 

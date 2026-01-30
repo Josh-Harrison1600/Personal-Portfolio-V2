@@ -2,6 +2,7 @@ import { Modal } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import "./ChooseLanguage.css";
 
 export default function ChooseLanguage({
 	languagePicked,
@@ -32,30 +33,45 @@ export default function ChooseLanguage({
 			title="Choose Language"
 			zIndex={10000}
 			withinPortal={false}
+			withCloseButton={false}
+			closeOnClickOutside={false}
 			centered
+			classNames={{
+				root: "modal-root-class",
+				inner: "modal-inner-class",
+				content: "modal-content-class",
+				header: "modal-header-class",
+				title: "modal-title-class",
+				body: "modal-body-class",
+				close: "modal-close-class",
+			}}
 		>
-			<button
-				type="button"
-				onClick={() => {
-					changeLanguage("en");
-					languagePicked();
-					localStorage.setItem("language", "en");
-					close();
-				}}
-			>
-				English
-			</button>
-			<button
-				type="button"
-				onClick={() => {
-					changeLanguage("jp");
-					languagePicked();
-					localStorage.setItem("language", "jp");
-					close();
-				}}
-			>
-				日本語
-			</button>
+			<div className="language-selection">
+				<button
+					type="button"
+					className="english-btn"
+					onClick={() => {
+						changeLanguage("en");
+						languagePicked();
+						localStorage.setItem("language", "en");
+						close();
+					}}
+				>
+					English
+				</button>
+				<button
+					type="button"
+					className="japanese-btn"
+					onClick={() => {
+						changeLanguage("jp");
+						languagePicked();
+						localStorage.setItem("language", "jp");
+						close();
+					}}
+				>
+					日本語
+				</button>
+			</div>
 		</Modal>
 	);
 }
