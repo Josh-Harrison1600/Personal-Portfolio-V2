@@ -3,8 +3,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+}
+
+.about-header {
+  display: none;
 }
 
 .about-title {
@@ -89,6 +94,7 @@
 
 @media (max-width: 768px) {
   .about-content {
+    --main-background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,12 +108,31 @@
     padding-bottom: 20px;
   }
 
+  .about-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-left: 3rem;
+  }
+
+  .about-header h2 {
+    color: var(--teal-color);
+    align-self: flex-start;
+    font-size: 24px;
+  }
+
   .about-paragraph {
     font-size: 1.3rem;
   }
 
   .download-resume {
     margin: 0;
+  }
+
+  .about-left {
+    padding-top: 0rem;
   }
 
   .about-right {

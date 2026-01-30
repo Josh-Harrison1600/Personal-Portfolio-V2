@@ -29,12 +29,8 @@
   height: 100%;
 }
 
-.experience-title {
-  position: absolute;
-  top: -8rem;
-  left: 40px;
-  font-size: 1.8rem;
-  font-weight: bold;
+.experience-header {
+  display: none;
 }
 
 .experience-content {
@@ -128,6 +124,23 @@
 }
 
 @media (max-width: 768px) {
+  .experience-div {
+    flex-direction: column;
+  }
+
+  .experience-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .experience-header h2 {
+    color: var(--teal-color);
+    align-self: flex-start;
+    margin-left: 1.5rem;
+    font-size: 24px;
+  }
+
   .experience-content {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -136,6 +149,7 @@
   .cloud-and-more,
   .hennge,
   .general-data {
+    --main-background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;

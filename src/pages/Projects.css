@@ -7,6 +7,10 @@
   padding-right: 2rem;
 }
 
+.projects-header {
+  display: none;
+}
+
 .project-1,
 .project-2 {
   display: flex;
@@ -59,6 +63,19 @@
     height: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .projects-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .projects-header h2 {
+    color: var(--teal-color);
+    font-size: 24px;
+    align-self: flex-start;
   }
 
   .project-title,

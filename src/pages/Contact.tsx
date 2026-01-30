@@ -40,8 +40,8 @@ export default function Contact() {
 
 	return (
 		<div className="contact-div">
-			<div className="contact-title">
-				<h2>{t("contact.title")}</h2>
+			<div className="contact-header">
+				<h2>{t("contact.header")}</h2>
 			</div>
 			<div className="contact-methods">
 				<div className="email-form">
@@ -66,7 +66,6 @@ export default function Contact() {
 				autoClose={3000}
 				style={{ zIndex: 999999 }}
 				toastClassName="custom-toast"
-				
 			/>
 		</div>
 	);

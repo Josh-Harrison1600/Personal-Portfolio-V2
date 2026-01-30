@@ -6,9 +6,8 @@
   text-align: center;
 }
 
-.contact-title {
-  font-size: 1.8rem;
-  font-weight: bold;
+.contact-header {
+  display: none;
 }
 
 .contact-methods {
@@ -138,4 +137,33 @@
 
 .custom-toast .Toastify__toast-icon svg {
   fill: white;
+}
+
+@media (max-width: 768px) {
+  .contact-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+
+  .contact-header h2 {
+    color: var(--teal-color);
+    align-self: flex-start;
+    font-size: 24px;
+  }
+
+  .contact-methods {
+    width: 350px;
+    height: 600px;
+  }
+
+  .submit-message-btn {
+    background: none;
+    border: 1px solid #4fd1d3;
+
+    &:after {
+      background: none;
+    }
+  }
 }

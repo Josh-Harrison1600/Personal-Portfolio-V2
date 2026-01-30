@@ -1,6 +1,5 @@
 import "./Projects.css";
 import { useTranslation } from "react-i18next";
-import UnderConstruction from "../assets/buillding.png";
 import CSS from "../assets/css-3.svg";
 import GITHUBACTIONS from "../assets/github-actions.svg";
 import PYTHON from "../assets/Python.svg";
@@ -13,6 +12,9 @@ export default function Projects() {
 
 	return (
 		<div className="projects-content">
+			<div className="projects-header">
+				<h2>{t("projects.header")}</h2>
+			</div>
 			<div className="project-1">
 				<div className="kana-typer-desc">
 					<h2 className="project-title">{t("projects.kana-typer-title")}</h2>
