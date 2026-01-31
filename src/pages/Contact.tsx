@@ -17,7 +17,8 @@ export default function Contact() {
 		register,
 		handleSubmit,
 		reset,
-		formState: { errors },
+		// biome-ignore lint/correctness/noEmptyPattern: <ignore for deployment>
+		formState: {},
 	} = useForm<ContactFormData>();
 
 	const sendEmail: SubmitHandler<ContactFormData> = async (
