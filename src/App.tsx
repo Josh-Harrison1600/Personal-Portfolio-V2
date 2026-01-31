@@ -75,9 +75,15 @@ function App() {
 		};
 	}, []);
 
+	//bring the user back to the landing on refresh
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Header
+				isReady={hasPickedLanguage}
 				activeSection={activeSection}
 				onScrollToLanding={() => handleScrollingToSection(landingRef)}
 				onScrollToAbout={() => handleScrollingToSection(aboutRef)}
@@ -92,6 +98,7 @@ function App() {
 					<section id="landing" ref={landingRef} className="landing-section">
 						<Landing
 							onScrollToAbout={() => handleScrollingToSection(aboutRef)}
+							isReady={hasPickedLanguage}
 						/>
 					</section>
 

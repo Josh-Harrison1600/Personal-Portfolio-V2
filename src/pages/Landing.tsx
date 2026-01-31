@@ -6,8 +6,10 @@ import Typewriter from "typewriter-effect";
 
 export default function Landing({
 	onScrollToAbout,
+	isReady,
 }: {
 	onScrollToAbout: () => void;
+	isReady: boolean;
 }) {
 	const [introFinished, setIsIntroFinished] = useState(false);
 	const [unlockScroll, setUnlockScroll] = useState(false);
@@ -29,19 +31,21 @@ export default function Landing({
 		<div className="greeting">
 			{/* Hello I'm Josh */}
 			<div className="greeting-typewriter">
-				<Typewriter
-					onInit={(typewriter) => {
-						typewriter
-							.typeString(
-								`${t("landing.greeting-one")}<span style='color: #00ffff;'>${t("landing.greeting-two")}</span>${t("landing.greeting-three")}`,
-							)
-							.pauseFor(2500)
-							.start()
-							.callFunction(() => {
-								setIsIntroFinished(true);
-							});
-					}}
-				/>
+				{isReady && (
+					<Typewriter
+						onInit={(typewriter) => {
+							typewriter
+								.typeString(
+									`${t("landing.greeting-one")}<span style='color: #00ffff;'>${t("landing.greeting-two")}</span>${t("landing.greeting-three")}`,
+								)
+								.pauseFor(2500)
+								.start()
+								.callFunction(() => {
+									setIsIntroFinished(true);
+								});
+						}}
+					/>
+				)}
 			</div>
 
 			<div className="role-array">

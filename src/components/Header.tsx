@@ -12,6 +12,7 @@ export default function Navbar({
 	onScrollToProjects,
 	onScrollToContact,
 	activeSection,
+	isReady,
 }: {
 	onScrollToLanding: () => void;
 	onScrollToAbout: () => void;
@@ -19,6 +20,7 @@ export default function Navbar({
 	onScrollToProjects: () => void;
 	onScrollToContact: () => void;
 	activeSection: string;
+	isReady: boolean;
 }) {
 	const { t, i18n } = useTranslation();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +40,7 @@ export default function Navbar({
 	return (
 		<motion.header
 			initial={{ y: "-100%", opacity: 0 }}
-			animate={{ y: 0, opacity: 1 }}
+			animate={isReady ? { y: 0, opacity: 1 } : { y: "-100%", opacity: 0 }}
 			transition={{
 				delay: 10.2,
 				duration: 0.8,
