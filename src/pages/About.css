@@ -92,7 +92,8 @@
   width: 70px;
 }
 
-@media (max-width: 768px) {
+/* Mobile & tablet*/
+@media (max-width: 1024px) {
   .about-content {
     --main-background-color: transparent;
     display: flex;

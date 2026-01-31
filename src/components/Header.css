@@ -117,8 +117,8 @@ nav {
   display: none;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* Mobile & tablet*/
+@media (max-width: 1024px) {
   @keyframes openMenu {
     from {
       transform: translateX(-100vw);
