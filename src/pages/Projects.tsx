@@ -1,5 +1,7 @@
 import "./Projects.css";
 import { useTranslation } from "react-i18next";
+import SCRAPER from "../assets/japan-job-scraper.png";
+import KANATYPER from "../assets/kana-typer.png";
 
 interface ProjectCardProps {
 	title: string;
@@ -22,7 +24,7 @@ export default function Projects() {
 				<h2>{t("projects.header")}</h2>
 			</div>
 			<div className="project-1">
-				<div className="kana-typer-desc">
+				<div className="project-title-and-description">
 					<h2 className="project-title">{t("projects.kana-typer-title")}</h2>
 					<p className="project-description">
 						{t("projects.kana-typer-description")}
@@ -34,38 +36,32 @@ export default function Projects() {
 						<ProjectCard title="TypeScript" />
 					</div>
 				</div>
-				<div className="project-video-div">
+				<div className="project-img-div">
 					<a
 						href="https://github.com/Josh-Harrison1600/Kana-Typer"
 						target="__blank"
 						rel="noopener noreferrer"
 					>
-						<video className="project-video" muted autoPlay={false} loop>
-							<source
-								src="https://mayakashi.s3.us-east-2.amazonaws.com/KanaTyper.mp4"
-								type="video/mp4"
-							/>
-						</video>
+						<img src={KANATYPER} className="project-img" alt="Kana Typer" />
 					</a>
 				</div>
 			</div>
 			<div className="project-2">
-				<div className="project-video-div">
+				<div className="project-img-div">
 					<a
-						href="https://github.com/Josh-Harrison1600/Kana-Typer"
+						href="https://github.com/Josh-Harrison1600/Japan-Job-Scraper"
 						target="__blank"
 						rel="noopener noreferrer"
 					>
-						<video className="project-video" muted autoPlay={false} loop>
-							<source
-								src="https://mayakashi.s3.us-east-2.amazonaws.com/KanaTyper.mp4"
-								type="video/mp4"
-							/>
-						</video>
+						<img
+							src={SCRAPER}
+							className="project-img"
+							alt="Japan Job Scraper"
+						/>
 					</a>
 				</div>
-				<div className="kana-typer-desc">
-					<h2 className="project-title-bottom">
+				<div className="project-title-and-description">
+					<h2 className="project-title">
 						{t("projects.japan-job-scraper-title")}
 					</h2>
 					<p className="project-description">
