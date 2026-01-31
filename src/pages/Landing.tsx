@@ -92,7 +92,7 @@ export default function Landing({
 						onClick={onScrollToAbout}
 						className="get-started-btn"
 					>
-						Get Started ↓
+						{t("landing.start")} ↓
 					</button>
 				</motion.div>
 			</div>

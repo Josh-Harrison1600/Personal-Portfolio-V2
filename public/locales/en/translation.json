@@ -18,7 +18,8 @@
       "I'm a React Developer",
       "I'm based in Canada",
       "Click the button to start!"
-    ]
+    ],
+    "start": "Get Started"
   },
   "about": {
     "header": "About",
@@ -33,7 +34,9 @@
     "moncton": "Moncton, New Brunswick, Canada",
     "tokyo": "Tokyo, Japan",
     "general-data": "Created an internal full-stack application with React, TypeScript Node.js, CSS, Tailwind, and Retrieval Augmented Generation. Deployed and managed a full-stack application using CI/CD, GitHub Actions, and Microsoft Azure services. Developed a bankruptcy processing form in React, using TypeScript and Tailwind CSS, tailored to client-specific needs. Integrated form state management and validation for a seamless and error-resistant user experience. Coordinated backend enhancements using Node.js for custom API logic and data handling.",
-    "hennge": "Created an admin dashboard Using React, TypeScript, and CSS along with a variety of libraries such as React Query. Deployed the application using CI/CD, and GitHub Actions. Set up an AWS environment with Terraform, S3, CloudFront, and Route53 to support the deployment of the application. Participated in daily standups with engineering team to discuss and solve issues."
+    "junior-full-stack": "Junior Full-Stack Developer",
+    "hennge": "Created an admin dashboard Using React, TypeScript, and CSS along with a variety of libraries such as React Query. Deployed the application using CI/CD, and GitHub Actions. Set up an AWS environment with Terraform, S3, CloudFront, and Route53 to support the deployment of the application. Participated in daily standups with engineering team to discuss and solve issues.",
+    "front-end-intern": "Front-end Developer Intern"
   },
   "projects": {
     "header": "Projects",
@@ -44,6 +47,11 @@
   },
   "contact": {
     "header": "Contact",
-    "title": "Contact Me!"
+    "title": "Contact Me!",
+    "reach-out": "Feel Free to Reach Out!",
+    "send-msg": "Send Messaege",
+    "name": "Enter Your Name",
+    "email": "Enter Your Email",
+    "message": "Enter Your Message"
   }
 }

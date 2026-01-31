@@ -42,7 +42,7 @@ export default function Experience() {
 								</h3>
 								<h3>
 									<FaLaptop />
-									Junior Full-Stack Developer
+									{t("experience.junior-full-stack")}
 								</h3>
 								<h3>
 									<FaLocationDot />
@@ -87,7 +87,7 @@ export default function Experience() {
 								</h3>
 								<h3>
 									<FaLaptop />
-									Front-end Developer Intern
+									{t("experience.front-end-intern")}
 								</h3>
 								<h3>
 									<FaLocationDot />

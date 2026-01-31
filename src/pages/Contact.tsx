@@ -45,17 +45,17 @@ export default function Contact() {
 			</div>
 			<div className="contact-methods">
 				<div className="email-form">
-					<h2>Feel Free to Reach Out!</h2>
+					<h2>{t("contact.reach-out")}</h2>
 					<form onSubmit={handleSubmit(sendEmail)}>
-						<input placeholder="Enter Your Name" {...register("name")} />
-						<input placeholder="Enter Your Email" {...register("email")} />
+						<input placeholder={t("contact.name")} {...register("name")} />
+						<input placeholder={t("contact.email")} {...register("email")} />
 						<textarea
-							placeholder="Enter Your Message"
+							placeholder={t("contact.message")}
 							{...register("message")}
 						/>
 						<button type="submit" className="submit-message-btn">
 							<MdOutlineEmail className="email-icon" />
-							Send Message
+							{t("contact.send-msg")}
 						</button>
 					</form>
 					<div className="socials"></div>
