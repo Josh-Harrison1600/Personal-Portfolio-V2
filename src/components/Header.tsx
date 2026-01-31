@@ -34,6 +34,7 @@ export default function Navbar({
 	//Change the languge
 	const changeLanguage = () => {
 		const newLang = i18n.language === "en" ? "jp" : "en";
+		localStorage.setItem("language", newLang);
 		i18n.changeLanguage(newLang);
 	};
 
