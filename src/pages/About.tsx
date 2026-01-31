@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import AWS from "../assets/aws.svg";
 import CSS from "../assets/css-3.svg";
 import GIT from "../assets/git-icon.svg";
-import MYSQL from "../assets/mysql-icon.svg";
 import NODE from "../assets/nodejs-icon.svg";
+import PYTHON from "../assets/Python.png";
 import POSTGRES from "../assets/postgresql.svg";
 import REACT from "../assets/react.svg";
 import TAILWIND from "../assets/tailwindcss-icon.svg";
@@ -21,7 +21,10 @@ export default function About() {
 			</div>
 			<div className="about-content">
 				<div className="about-left">
-					<p className="about-paragraph">{t("about.paragraph")}</p>
+					<p className="about-paragraph">{t("about.paragraph-one")}</p>
+					<p className="about-paragraph">{t("about.paragraph-two")}</p>
+					<p className="about-paragraph">{t("about.paragraph-three")}</p>
+					<p className="about-paragraph">{t("about.paragraph-four")}</p>
 					<a href={RESUME} download className="download-resume">
 						<span className="download-text">{t("about.download")}</span>
 					</a>
@@ -33,7 +36,7 @@ export default function About() {
 					<img src={CSS} alt="CSS" />
 					<img src={NODE} alt="Node" />
 					<img src={GIT} alt="Git" />
-					<img src={MYSQL} alt="MySQL" />
+					<img src={PYTHON} alt="Python" />
 					<img src={POSTGRES} alt="PostgreSQL" />
 					<img src={TERRAFORM} alt="Terraform" />
 					<img src={TAILWIND} alt="Tailwind" />
