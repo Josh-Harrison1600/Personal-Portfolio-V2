@@ -13,8 +13,8 @@ export default function ChooseLanguage({
 	const { i18n } = useTranslation();
 
 	//Change language to JP or EN
-	const changeLanguage = (lng: string) => {
-		i18n.changeLanguage(lng);
+	const changeLanguage = async (lng: string) => {
+		await i18n.changeLanguage(lng);
 		console.log("language chosen:", lng);
 	};
 
@@ -50,8 +50,8 @@ export default function ChooseLanguage({
 				<button
 					type="button"
 					className="english-btn"
-					onClick={() => {
-						changeLanguage("en");
+					onClick={async () => {
+						await changeLanguage("en");
 						languagePicked();
 						localStorage.setItem("language", "en");
 						close();
@@ -62,8 +62,8 @@ export default function ChooseLanguage({
 				<button
 					type="button"
 					className="japanese-btn"
-					onClick={() => {
-						changeLanguage("jp");
+					onClick={async () => {
+						await changeLanguage("jp");
 						languagePicked();
 						localStorage.setItem("language", "jp");
 						close();
