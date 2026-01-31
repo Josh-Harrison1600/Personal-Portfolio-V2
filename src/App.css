@@ -36,12 +36,23 @@ body,
   background-color: var(--main-background-color);
 }
 
-/* Get rid of cursor gradient on mobile */
+/* Get rid of cursor gradient on mobile  & tablet*/
 @media (max-width: 768px) {
   .gradient-div {
     background-attachment: fixed;
     background-image: radial-gradient(
       circle 500px at 15% 30%,
+      #0e2d74a8 0%,
+      transparent 100%
+    );
+    background-color: var(--main-background-color);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gradient-div {
+    background-attachment: fixed;
+    background-image: radial-gradient(
+      circle 700px at 15% 30%,
       #0e2d74a8 0%,
       transparent 100%
     );
