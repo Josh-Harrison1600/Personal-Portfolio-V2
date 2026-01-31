@@ -61,18 +61,19 @@ nav {
 }
 
 .language-selector-btn {
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background: none;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid var(--white-text);
   color: var(--white-text);
   font-weight: 600;
   font-size: 1.5rem;
   width: 132px;
   height: 44px;
   text-align: center;
-  border-radius: 32px;
+  border-radius: 1px;
   transition: all 0.25s ease-in-out;
 
   &:hover {
@@ -155,6 +156,26 @@ nav {
     font-size: 2rem;
   }
 
+  .active-link {
+    transform: scale(1);
+    color: var(--white-text);
+  }
+
+  .nav-btn:hover,
+  .nav-btn.active-link {
+    color: var(--white-text);
+  }
+
+  .nav-btn {
+    &:after {
+      content: none;
+    }
+  }
+
+  .language-selector-btn {
+    margin-top: 0rem;
+  }
+
   .navbar-right {
     display: flex;
     visibility: hidden;
@@ -163,7 +184,7 @@ nav {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--main-background-color);
     transform: translateX(-100vw);
     transition: visibility 0.5s;
   }
@@ -184,6 +205,7 @@ nav {
   .nav-li {
     display: flex;
     flex-direction: column;
+    margin-top: 0.5rem;
   }
 
   .close-icon-div {
