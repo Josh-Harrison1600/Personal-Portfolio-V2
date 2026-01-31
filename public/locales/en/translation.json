@@ -43,7 +43,7 @@
     "kana-typer-title": "Kana Typer",
     "kana-typer-description": "Kana Typer is a web app that helps users learn the main two Japanese phonetic systems, Hiragana & Katakana.\n The user can select individual symbols, specific categories, or the entire system to study and review!",
     "japan-job-scraper-title": "Japan Job Scraper",
-    "japan-job-scraper": "Japan job scraper is a web scraper I built for my own personal use that scraps a list of Japanese job boards and filters their compatability with me and send its to a React front-end!\n The scraper has been set to run weekly and update the front-end only with the new jobs so I can constantly see new jobs being posted without having to sort through multiple sites manually!"
+    "japan-job-scraper": "Japan job scraper is a web scraper I built for my own personal use that scraps a list of Japanese job boards and filters their compatability with me and sends it to a React front-end! The scraper has been set to run weekly and update the front-end only with the new jobs that have been posted within the last week so I can constantly see new job postings without having to sort through multiple sites manually!"
   },
   "contact": {
     "header": "Contact",

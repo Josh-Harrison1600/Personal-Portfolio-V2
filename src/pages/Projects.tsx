@@ -1,5 +1,6 @@
 import "./Projects.css";
 import { useTranslation } from "react-i18next";
+import { GoArrowUpRight } from "react-icons/go";
 import SCRAPER from "../assets/japan-job-scraper.png";
 import KANATYPER from "../assets/kana-typer.png";
 
@@ -25,7 +26,15 @@ export default function Projects() {
 			</div>
 			<div className="project-1">
 				<div className="project-title-and-description">
-					<h2 className="project-title">{t("projects.kana-typer-title")}</h2>
+					<a
+						href="https://kana-typer-fawn.vercel.app/"
+						target="__blank"
+						rel="noopener noreferrer"
+						className="project-title"
+					>
+						{t("projects.kana-typer-title")}{" "}
+						<GoArrowUpRight className="arrow" size={24} />
+					</a>
 					<p className="project-description">
 						{t("projects.kana-typer-description")}
 					</p>
@@ -38,7 +47,7 @@ export default function Projects() {
 				</div>
 				<div className="project-img-div">
 					<a
-						href="https://github.com/Josh-Harrison1600/Kana-Typer"
+						href="https://kana-typer-fawn.vercel.app/"
 						target="__blank"
 						rel="noopener noreferrer"
 					>
@@ -61,9 +70,15 @@ export default function Projects() {
 					</a>
 				</div>
 				<div className="project-title-and-description">
-					<h2 className="project-title">
-						{t("projects.japan-job-scraper-title")}
-					</h2>
+					<a
+						href="https://github.com/Josh-Harrison1600/Japan-Job-Scraper"
+						target="__blank"
+						rel="noopener noreferrer"
+						className="project-title-bottom"
+					>
+						{t("projects.japan-job-scraper-title")}{" "}
+						<GoArrowUpRight className="arrow" size={24} />
+					</a>
 					<p className="project-description">
 						{t("projects.japan-job-scraper")}
 					</p>
