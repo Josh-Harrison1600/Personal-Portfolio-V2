@@ -46,28 +46,12 @@ export default function Projects() {
 					</div>
 				</div>
 				<div className="project-img-div">
-					<a
-						href="https://kana-typer-fawn.vercel.app/"
-						target="__blank"
-						rel="noopener noreferrer"
-					>
-						<img src={KANATYPER} className="project-img" alt="Kana Typer" />
-					</a>
+					<img src={KANATYPER} className="project-img" alt="Kana Typer" />
 				</div>
 			</div>
 			<div className="project-2">
 				<div className="project-img-div">
-					<a
-						href="https://github.com/Josh-Harrison1600/Japan-Job-Scraper"
-						target="__blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							src={SCRAPER}
-							className="project-img"
-							alt="Japan Job Scraper"
-						/>
-					</a>
+					<img src={SCRAPER} className="project-img" alt="Japan Job Scraper" />
 				</div>
 				<div className="project-title-and-description">
 					<a
