@@ -1,4 +1,5 @@
 import "./About.css";
+import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import AWS from "../assets/aws.svg";
 import CSS from "../assets/css-3.svg";
@@ -15,7 +16,17 @@ export default function About() {
 	const { t } = useTranslation();
 
 	return (
-		<div className="about-div">
+		<motion.div
+			className="about-div"
+			initial={{ opacity: 0, scale: 0.5 }}
+			whileInView={{ opacity: 1, scale: 1 }}
+			viewport={{ once: true }}
+			transition={{
+				duration: 0.8,
+				delay: 0.2, // Reduced delay so it feels snappier
+				ease: [0, 0.71, 0.2, 1.01],
+			}}
+		>
 			<div className="about-header">
 				<h2>{t("about.header")}</h2>
 			</div>
@@ -42,6 +53,6 @@ export default function About() {
 					<img src={TAILWIND} alt="Tailwind" />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

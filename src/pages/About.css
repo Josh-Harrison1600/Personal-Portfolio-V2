@@ -151,7 +151,6 @@
   }
 
   .about-right {
-    display: none !important; /* temporary until slider is figured out*/
     flex: 1;
     min-height: 20vh;
     display: grid;

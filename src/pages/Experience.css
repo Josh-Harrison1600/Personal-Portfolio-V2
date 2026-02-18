@@ -76,7 +76,6 @@
   flex-direction: column;
   flex: 3;
   white-space: pre-line;
-  border: var(--blue-border);
   background-color: var(--main-background-color);
   box-shadow: var(--blue-shadow);
   border-radius: 32px;
@@ -86,7 +85,6 @@
 
   &:hover {
     box-shadow: var(--blue-shadow-hover);
-    border: var(--blue-border-hover);
   }
 }
 
@@ -177,6 +175,10 @@
     gap: 4rem;
     margin-bottom: 6rem;
     text-align: left;
+  }
+
+  .exp-border {
+    display: none;
   }
 
   .year-h2 {
