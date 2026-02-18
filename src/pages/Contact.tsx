@@ -57,7 +57,6 @@ export default function Contact() {
 
 	return (
 		<motion.div
-			className="contact-div"
 			variants={fadeInUp}
 			initial="hidden"
 			whileInView="visible"

@@ -99,11 +99,18 @@ body,
 .landing-section,
 .about-section,
 .experience-section,
-.project-section,
-.contact-section {
+.project-section {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  scroll-margin-top: 10vh;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
   scroll-margin-top: 10vh;
 }
